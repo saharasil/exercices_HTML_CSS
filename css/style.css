@@ -37,3 +37,26 @@ dl code {
     background-color: gold;
     font-style: italic;
 }
+.cadr {
+    border: 5px solid #3a3535;
+    width: 60%;
+    padding: 5px;
+}
+
+.textgras {
+     font-weight: bolder;
+}
+
+.color {
+    color: salmon;
+}
+.italique {
+    font-style: italic;
+    font-size: 0.7em;
+}
+.typo {
+    font-size: 1.5em;
+}
+.romain {
+    list-style-type: upper-roman;
+}

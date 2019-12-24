@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tableaux HTML</title>
+    <style>
+        /* les styles pour la liste  */
+        dl {
+            background-color: burlywood;
+        }
+
+        dt {
+            font-weight: bold;
+        }
+
+        dd {
+            font-style: italic;
+        }
+
+       /* les styles pour les tableaux */
+
+       table {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 80%;
+        /* pour fusionner les dords des cellues c'est avec : border border-collapse: collaps; */
+        border-collapse: collapse;
+       }
+
+       td, th {
+           border: 1px solid #943855;
+           text-align: left;
+           padding: 8px;
+       }
+       tr:nth-child(even) {
+           background-color: burlywood;
+       }
+       caption {
+            background-color: #fbe3b9;
+            border: 2px solid #6e2142 ; 
+            padding: 10px;
+            border-collapse: collapse; 
+            font-weight: bolder;
+            text-transform: uppercase; 
+       }
+
+      
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Des Tableaux et une liste de définition</h1>
+    <h2>Liste de termes et leur définition</h2>
+    <dl>
+        <dt>Vacances :</dt>
+            <dd>Période de congés des personnes en activité.</dd>
+        <dt>Travail :</dt>
+            <dd>Activité humaine organisée et utile. Ensemble de ces activités</dd>
+    </dl>
+    <h2>Des tableaux</h2>
+
+    <!-- table>tr*6>td*3 -->
+    <table>
+        <caption>les plus belles compagnies du monde</caption>
+        <tr>
+            <th>Compagnie</th>
+            <th>Contact</th>
+            <th>Pays</th>
+            <th>téléphone</th>
+        </tr>
+        <tr>
+            <td><a href="https://www.auchan.fr/" target="_blank" title="le site de auchan">Auchan</a></td>
+            <td>M<sup>me</sup>Auchan</td>
+            <td>France</td>
+            <td>06 02 66 03 56</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.carrefour.fr/" target="_blank" title="le site de carrefour">Carrefour</a></td>
+            <td>M. carrefour</td>
+            <td>France</td>
+            <td>07 25 55 98 69</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.lidl.fr/" target="_blank" title="le site de Lidl">Lidl</a></td>
+            <td>Frau Lidl</td>
+            <td>Allemagne</td>
+            <td>
+                <ul>
+                    <li>07 55 46 18 76</li>
+                    <li>07 22 74 69 44</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.e-leclerc.com/" target="_blank" title="le site de leclerc">Leclerc</a></td>
+            <td> M.Leclerc</td>
+            <td>France</td>
+            <td>06 13 11 98 45</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.picard.fr/" target="_blank" title="le site de picard">Picard</a></td>
+            <td>M.Picard</td>
+            <td>France</td>
+            <td>07 22 56 77 89</td>
+        </tr>
+    </table>
+    
+
+
+<h2>Un tableau avec fusion de colonnes</h2>
+<table>
+    <tr>
+        <th>Nom</th>
+        <!-- colspan: fusion cellule  -->
+        <th colspan="2">Courriel</th>
+       
+    </tr>
+    <tr>
+        <td>Père Noël</td>
+        <td><a href="mailto:papanoel@polenord.pn">papanoel@polenord.pn</a></td>
+        <td><a href="mailto:Santa-Claus@noel">Santa-Claus@noel</a></td>
+    </tr>
+</table>
+
+<h2>Un tablaux avec fusion de rangées</h2>
+
+<table>
+    <tr>
+        <th>Nom</th>
+        <th>Bille Gates</th>
+    </tr>
+    <tr>
+        <!-- rowspan : fusion rangée  -->
+        <td rowspan="3">téléphone</td>
+        <td>06 55 23 78 88</td>
+    </tr>
+    <tr>
+        <td>07 26 88 52 66</td>
+      
+    </tr>
+    <tr>
+        <td>06 22 04 55 55</td>
+    </tr>
+</table>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+</html>

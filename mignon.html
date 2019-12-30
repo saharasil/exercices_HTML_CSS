@@ -11,6 +11,13 @@
         background-color: white;
     
     }
+    section {
+            width: 60%;
+            /* margin 0 et auto sont les déclarations raccourcis cf . https://developer.mozilla.org/fr/docs/Web/CSS/Propri%C3%A9t%C3%A9s_raccourcies auto permet de centrer la section  à droite et à gauche dans l'élément parent   */
+            margin: 0 auto;
+
+        }
+        
     .jaune {
         background-color: yellow;
     }
@@ -31,7 +38,7 @@
     td, tr {
         width: 4em;
         height: 4em;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         
     }
 
@@ -41,85 +48,62 @@
 </head>
 <body>
     <section>
+        <!-- table>tr*21>td14  -->
+
 <table>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <!-- 1 er rangée  -->
+         <!-- 14 td pour avoir 14 colonnes mais la première cellule est fusionnés avec les 13 suivantes 13+1=14 -->
+        <td colspan="14"></td>
+    
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <!-- 2 éme rangée  -->
+        <td colspan="4"></td>
         <td colspan="6" class="jaune"></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td colspan="4"></td>
+      
         
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <!-- 3 éme rangée  -->
+        <td colspan="3"></td> 
         <td colspan="3" class="jaune"></td>
         <td colspan="2" class="gris"></td>
         <td colspan="3" class="jaune" ></td>
-        <td ></td>
-        <td ></td>
-        <td ></td>
+        <td colspan="3"></td>
+       
         
        
         
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <!-- 4 éme rangée  -->
+        <td colspan="2"></td>
         <td colspan="3" class="jaune"></td>
         <td class="gris"></td>
         <td colspan="2"></td>
         <td class="gris"></td>
         <td colspan="3" class="jaune"></td>
-        <td></td>
-        <td></td>
-        
-        
-        
-       
+        <td colspan="2"></td>
         
     </tr>
-    <tr>
-        <td></td>
-        <td></td>
+    <tr> 
+        <!-- 5 éme rangée  -->
+        <td colspan="2"></td>
         <td colspan="2" class="noir"></td>
         <td class="gris"></td>
         <td></td>
         <td colspan="2" class="noir"></td>
         <td></td>
         <td class="gris"></td>
-        <td colspan="2" class="noir"></td>
-        <td></td>
-        
-        
-        
-        
+        <td colspan="2" class="noir"></td>    
     </tr>
     <tr>
-        <td></td>
-        <td></td >
+    
+        <!-- 6 éme rangée  -->
+        <td colspan="2"></td>
         <td colspan="2" class="noir"></td>
         <td class="gris"></td>
         <td></td>
@@ -127,123 +111,114 @@
         <td></td>
         <td class="gris"></td>
         <td colspan="2" class="noir"></td>
-        <td></td>
+        
         
         
     </tr >
     <tr>
-        <td></td>
-        <td></td>
+        <!-- 7 éme rangée  -->
+        <td colspan="2"></td>
         <td colspan="3" class="jaune"></td>
         <td class="gris"></td>
         <td colspan="2"></td>
         <td class="gris"></td>
         <td colspan="3" class="jaune"></td>
-        <td></td>
-        <td></td>
+        <td colspan="2"></td>
         
         
        
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <!-- 8 éme rangée  -->
+        <td colspan="2"></td>
         <td colspan="4" class="jaune"></td>
         <td colspan="2" class="gris"></td>
         <td colspan="4" class="jaune"></td>
-        <td></td>
-        <td></td>
+        <td colspan="2"></td>
         
        
        
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <!-- 9 éme rangée  -->
+        <td colspan="2"></td>
         <td colspan="2" class="jaune"></td>
         <td class="noir"></td>
         <td colspan="4" class="jaune"></td>
         <td class="noir"></td>
         <td colspan="2" class="jaune"></td>
-        <td></td>
-        <td></td>
+        <td colspan="2"></td>
        
      
         
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <!-- 10 éme rangée  -->
+        <td colspan="2"></td>
         <td colspan="3" class="jaune"></td>
         <td colspan="4" class="noir"></td>
         <td colspan="3" class="jaune"></td>
-        <td></td>
-        <td></td>
+        <td colspan="2"></td>
       
         
        
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <!-- 11 éme rangée  -->
+        <td colspan="2"></td>
         <td colspan="10" class="jaune"></td>
-        <td></td>
-        <td></td>
+        <td colspan="2"></td>
         
     </tr>
-    <tr>
-        <td></td>
-        <td></td>
+    <tr> 
+        <!-- 12 éme rangée  -->
+        <td colspan="2"></td>
         <td class="bleu"></td>
         <td colspan="8" class="jaune"></td>
         <td class="bleu"></td>
-        <td></td>
-        <td></td>
+        <td colspan="2"></td>
 
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <!-- 13 éme rangée  -->
+        <td colspan="2"></td>
         <td class="jaune"></td>
         <td colspan="8" class="bleu"></td>
         <td class="jaune"></td>
-        <td></td>
-        <td></td>
+        <td colspan="2"></td>
 
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <!-- 14 éme rangée  -->
+        <td colspan="2"></td>
         <td colspan="2" class="jaune"></td>
         <td colspan="6" class="bleu"></td>
         <td colspan="2" class="jaune"></td>
-        <td></td>
-        <td></td>
+        <td colspan="2"></td>
         
        
         
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <!-- 15 éme rangée  -->
+        <td colspan="2"></td>
         <td colspan="2" class="jaune"></td>
         <td colspan="6" class="bleu"></td>
         <td colspan="2" class="jaune"></td>
-        <td></td>
-        <td></td>
+        <td colspan="2"></td>
         
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <!-- 16 éme rangée  -->
+        <td colspan="2"></td>
         <td class="jaune"></td>
         <td colspan="8" class="bleu"></td>
         <td class="jaune"></td>
-        <td></td>
-        <td></td>
+        <td colspan="2"></td>
 
     </tr>
     <tr>
+        <!-- 17 éme rangée  -->
         <td></td>
         <td colspan="2" class="noir"></td>
         <td colspan="8" class="bleu"></td>
@@ -252,47 +227,38 @@
 
     </tr>
     <tr>
-        <td></td>
-        <td></td>
+        <!-- 18 éme rangée  -->
+        <td colspan="2"></td>
         <td class="noir"></td>
         <td colspan="8" class="bleu"></td>
         <td class="noir"></td>
-        <td></td>
-        <td></td>
+        <td colspan="2"></td>
         
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <!-- 19 éme rangée  -->
+        <td colspan="4"></td>
         <td colspan="2" class="noir"></td>
-        <td></td>
-        <td></td>
+        <td colspan="2"></td>
         <td colspan="2" class="noir"></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        
+        <td colspan="4"></td>
+      
         
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <!-- 20 éme rangée -->
+        <td colspan="3"></td>
         <td colspan="3" class="noir"></td>
-        <td></td>
-        <td></td>
+        <td colspan="2"></td>
         <td colspan="3" class="noir"></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td colspan="3"></td>
+        
         
        
         
     </tr>
     <tr>
+        <!-- 21 éme rangée  -->
         <td></td>
         <td></td>
         <td></td>
